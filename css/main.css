@@ -1,0 +1,549 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, span {
+  font-family: "Asul", sans-serif;
+}
+
+p, h4, h6, a {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+body {
+  width: 100vw;
+}
+
+nav {
+  background-color: #000;
+  width: 100%;
+  padding: 0.5% 0% 0.5% 0%;
+}
+
+nav img {
+  width: 100%;
+  max-width: 264px;
+}
+
+.container-limited {
+  width: 1366px;
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+.align-container {
+  align-items: center;
+  display: flex;
+}
+
+.flex-style {
+  display: flex;
+}
+
+.between-style {
+  justify-content: space-between;
+}
+
+.center-style {
+  justify-content: center;
+}
+
+.padding-container {
+  padding: 3% 0% 3% 0%;
+}
+
+/* End | Global Styles */
+/* Nav */
+/* End | Nav */
+/* Main */
+.first-block, .second-block {
+  width: 50%;
+}
+
+.first-block {
+  margin-top: 38%;
+}
+
+.second-block {
+  display: flex;
+  justify-content: end;
+}
+
+.background-main {
+  background: url("../img/Diplomado-instalaciones-electricas.webp");
+  width: 100vw;
+  height: 100%;
+  max-height: 100%;
+  background-size: cover;
+  border-bottom: 1px solid #707070;
+}
+
+h1 {
+  color: white;
+  font-size: 45px;
+  width: 100%;
+}
+
+.first-block h1 span {
+  background-color: #5256A3;
+  padding: 0.5% 2% 0.5% 2%;
+}
+
+.first-block p {
+  color: white;
+  text-align: left;
+  width: 100%;
+  margin-top: 2%;
+}
+
+form {
+  background: white;
+  border-radius: 5px;
+  width: 350px;
+}
+
+form h3 {
+  font-size: 25px;
+  font-weight: 800;
+}
+
+form h3, p {
+  text-align: center;
+  color: #2E4053;
+  margin-bottom: 1rem;
+}
+
+select {
+  padding-left: 4%;
+  font-size: 16px;
+}
+
+.style-submit {
+  font-family: Source Sans Pro, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  background-color: #E3103E;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 4% 10% 4% 10%;
+  transition: all 0.5s ease;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.footer-form a {
+  text-decoration: underline;
+  color: #2E4053;
+}
+
+.check-wsp-sms {
+  text-align: center;
+  color: #2E4053;
+  font-family: Source Sans Pro, sans-serif;
+}
+
+.contact-inform {
+  padding: 1rem 1rem 1rem !important;
+}
+
+.form-control {
+  margin-bottom: 1rem !important;
+}
+
+.section {
+  margin: 0 auto;
+  padding: 2rem 0 2rem;
+}
+
+.container {
+  max-width: 75rem;
+  height: auto;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.centered {
+  text-align: center;
+  vertical-align: middle;
+  margin-bottom: 1rem;
+}
+
+.form-control, .form select {
+  position: relative;
+  width: 100%;
+  height: 3rem;
+  margin-bottom: 0.6rem;
+  font-family: Source Sans Pro, sans-serif;
+  color: #98AFBC;
+  border: 1px solid #D7DFE4;
+}
+.form-label {
+  position: absolute;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: inherit;
+  left: 1rem;
+  top: 0.75rem;
+  padding: 0 0.25rem;
+  transition: all 0.3s ease;
+  background: white;
+}
+.form-input {
+  position: absolute;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: inherit;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  resize: none;
+  width: 100%;
+  height: auto;
+  padding: 0.75rem 1.25rem;
+  border-radius: 3px;
+  border: 1px solid #D7DFE4;
+  background: transparent;
+  transition: all 0.2s ease-in-out;
+}
+.form-input::placeholder {
+  opacity: 0;
+  visibility: hidden;
+  color: transparent;
+}
+.form-input:focus {
+  outline: none;
+  border: 2px solid #5256A3;
+}
+.form-input:focus ~ .form-label {
+  top: -0.75rem;
+  left: 1rem;
+  z-index: 5;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+.form-input:not(:placeholder-shown).form-input:not(:focus) ~ .form-label {
+  top: -0.75rem;
+  left: 1rem;
+  z-index: 9;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+  border-radius: 3px;
+}
+
+.contact-column {
+  max-width: 30rem;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.contact-inform {
+  padding: 4rem 2rem 2rem;
+  border-radius: 0.25rem;
+}
+
+/* Final | Form */
+/* Second Section */
+.backgroundSecond-section {
+  background-color: #111457;
+  width: 100vw;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.paragraphs {
+  max-width: 350px;
+}
+
+.styles-paragraphs {
+  color: white;
+}
+
+.styles-paragraphs h4, h6 {
+  margin-left: 6%;
+  margin-bottom: 2%;
+}
+
+.styles-paragraphs h6 {
+  font-size: 13px;
+  font-weight: 100;
+}
+
+.container-threeDivs {
+  margin: 2%;
+}
+
+/* End | Second Section */
+/* Three Section */
+.threeSection {
+  text-align: center;
+}
+
+.threeSection h2 {
+  color: #111457;
+}
+
+.container-btns {
+  margin: 3% 0% 3% 0%;
+}
+
+.style-btns {
+  background-color: transparent;
+  border-radius: 25px;
+  padding: 0.5% 1.5% 0.5% 1.5%;
+  transition: all 0.5s ease;
+  margin-left: 1%;
+  margin-right: 1%;
+  color: #111457;
+  border: solid 1px #111457;
+}
+
+.style-btns a {
+  text-decoration: none;
+  color: #111457;
+  transition: all 0.5s ease;
+}
+
+.style-btns a:hover {
+  transition: all 0.5s ease;
+  color: white;
+}
+
+.color-firstBtn:hover {
+  transition: all 0.5s ease;
+  background-color: #111457;
+  color: white;
+}
+
+.second-btn:hover {
+  transition: all 0.5s ease;
+  background-color: #5256A3;
+  border-color: #5256A3;
+  color: white;
+}
+
+.cards {
+  width: 280px;
+  padding-bottom: 3%;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1607843137);
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1607843137);
+}
+
+.cards:hover {
+  animation: upcard 1s ease 0s 1 normal forwards;
+}
+
+@keyframes upcard {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+#toshow {
+  margin-top: 2%;
+}
+
+.cards img {
+  width: 280px;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.cards h3 {
+  color: #2E4053;
+  margin: 5% 4% 5% 4%;
+  text-align: center;
+  font-size: 16px;
+  padding-bottom: 5%;
+}
+
+.cards a {
+  background-color: #E3103E;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 4% 10% 4% 10%;
+  transition: all 0.5s ease;
+}
+
+.cards a:hover {
+  transition: all 0.5s ease;
+  background-color: #ff0037;
+  filter: saturate(200%);
+}
+
+.btn-vermas {
+  font-weight: 700;
+  background-color: transparent;
+  color: #E3103E;
+  border: solid 1px #E3103E;
+  border-radius: 5px;
+  padding: 1% 2% 1% 2%;
+  transition: all 0.5s ease;
+  margin-top: 3%;
+}
+
+.btn-vermas:hover {
+  background-color: #E3103E;
+  color: white;
+  transition: all 0.5s ease;
+}
+
+/* End | Three Sections */
+/* End | Main */
+/* Footer */
+footer {
+  background-color: #111457;
+  padding: 2% 0% 2% 0%;
+}
+
+footer h4 {
+  color: white;
+  font-size: 12px;
+}
+
+.links-icons-footer {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.links-icons-footer a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  transition: all 0.5s ease;
+}
+
+.links-icons-footer a:hover {
+  color: #E3103E;
+  transition: all 0.5s ease;
+}
+
+.links-icons-footer img {
+  width: 15px;
+  height: 15px;
+  transition: all 0.5s ease;
+}
+
+.links-icons-footer img:hover {
+  transition: all 0.5s ease;
+  transform: scale(1.2);
+}
+
+.footer-mobile {
+  display: none;
+}
+
+/* End | Footer */
+@media (max-width: 767px) {
+  .responsive-direction {
+    flex-direction: column;
+    justify-content: center;
+    display: grid;
+  }
+
+  .cards {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-bottom: 15%;
+  }
+
+  .paragraphs {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .backgroundSecond-section {
+    padding-top: 8%;
+    padding-bottom: 8%;
+  }
+
+  .btn-vermas {
+    padding: 3% 9% 3% 9%;
+  }
+
+  .padding-container {
+    padding: 15% 0% 15% 0%;
+  }
+
+  .style-btns {
+    padding: 2% 4% 2% 4%;
+  }
+
+  .container-btns {
+    margin: 12% 0% 7% 0%;
+  }
+
+  .contact-inform {
+    width: 290px;
+    margin-left: 57%;
+  }
+
+  .first-block {
+    margin-left: 7%;
+  }
+
+  .background-main {
+    background: url("../img/background-mobile.webp");
+    width: 100vw;
+    height: 100%;
+    max-height: 100%;
+    background-size: cover;
+  }
+
+  .footer-mobile {
+    display: block;
+    text-align: center;
+    padding: 10% 0% 10% 0%;
+  }
+
+  .footer-desktop {
+    display: none;
+  }
+
+  .links-icons-footer {
+    width: 60%;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-bottom: 10%;
+  }
+
+  .links-icons-footer img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .line-footer {
+    height: 1px;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 10%;
+  }
+
+  .footer-terms a {
+    text-decoration: none;
+    color: white;
+  }
+
+  footer h4 {
+    margin-bottom: 10%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
